@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>modal</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .container{
+                width: auto;
+                height: 500px;;
+            }
+              .box-shadow{
+           box-shadow: 2px 2px 8px black;
+            border: 2px solid rgba(255, 255, 255, 0.329); 
+            border-radius: 10px; 
+           padding: 5px;
+         }
+      .box-shadow:hover {
+      /* transform: scale(1.10); */
+       box-shadow: 0 0 20px rgb(247, 136, 136); 
+      /* font-size: 25px; */
+          /* background: linear-gradient(to right, #ffb199, #ff9aa2, #ffb6b9, #ffccd5, #ffe0e9);
+color: black; */
+
+    }
+     body{
+         background: linear-gradient(to right, #ffe0ac, #ffd8be, #ffcab0, #ffb5a7, #fec5bb);
+       }
+     .card{
+         background: linear-gradient(to right, #ffe0ac, #ffd8be, #ffcab0, #ffb5a7, #fec5bb);
+     }
+        </style>
+    </head>
+
+    <body>
+        <section>
+             <div class="container  mt-3"> 
+                <div class="row  mt-5">
+                    <!-- Eagle Card -->
+                    <div class="col-md-4 ">
+                        <div class="card m-3 box-shadow">
+                            <img src="images/eagle.jpg" class="card-img-top"
+                                alt="Eagle">
+                            <div class="card-body">
+                                <h5 class="card-title">Eagle</h5>
+                                <p class="card-text">Eagles are large birds of
+                                    prey capable of hunting vertebrates...</p>
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#eagleModal">
+                                    Click Here More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Eagle Modal -->
+                    <div class="modal fade" id="eagleModal" tabindex="-1"
+                        aria-labelledby="eagleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="eagleModalLabel">About Eagle</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2>Eagle</h2>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <img src="images/eagle.jpg"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>Eagles are large,
+                                                    powerfully-built birds of
+                                                    prey, with heavy heads and
+                                                    beaks. Even the smallest
+                                                    eagles, such as the booted
+                                                    eagle (Hieraaetus pennatus),
+                                                    which is comparable in size
+                                                    to a common buzzard (Buteo
+                                                    buteo) or red-tailed hawk
+                                                    (B. jamaicensis), have
+                                                    relatively longer and more
+                                                    evenly broad wings, and more
+                                                    direct, faster flight,
+                                                    despite the reduced size of
+                                                    their aerodynamic feathers.
+                                                    Most eagles are larger than
+                                                    any other raptors, apart
+                                                    from some vultures. The
+                                                    smallest species of eagle is
+                                                    the Great Nicobar serpent
+                                                    eagle (Spilornis klossi), at
+                                                   .</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card m-3 box-shadow">
+                            <img src="images/parrot.jpg" class="card-img-top"
+                                alt="Eagle">
+                            <div class="card-body">
+                                <h5 class="card-title">Parrot</h5>
+                                <p class="card-text">Parrots (Psittaciformes),
+                                    also known as psittacines are birds with a
+                                    strong curved beak, upright stance, and
+                                    clawed feet. They are classified in four
+                                    ...</p>
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#parrot">
+                                    Click Here More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="parrot" tabindex="-1"
+                        aria-labelledby="eagleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="eagleModalLabel">About Parrot</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Parrots (Psittaciformes), also known as
+                                    psittacines (/ˈsɪtəsaɪnz/),[1][2] are birds
+                                    with a strong curved beak, upright stance,
+                                    and clawed feet.[a] They are classified in
+                                    four families that contain roughly 410
+                                    species in 101 genera, found mostly in
+                                    tropical and subtropical regions. The four
+                                    families are the Psittaculidae (Old World
+                                    parrots), Psittacidae (African and New World
+                                    parrots), Cacatuidae (cockatoos), and
+                                    Strigopidae (New Zealand parrots). One-third
+                                    of all parrot species are threatened by
+                                    extinction, with a higher aggregate
+                                    extinction risk (IUCN Red List Index) than
+                                    any other comparable bird group.[3] Parrots
+                                    have a generally pantropical distribution
+                                    with several species inhabiting temperate
+                                    regions as well. The greatest diversity of
+                                    parrots is in South America[4] and
+                                    Australasia.[5].
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card m-3 box-shadow">
+                            <img src="images/rabbit.jpg" class="card-img-top"
+                                alt="Eagle">
+                            <div class="card-body">
+                                <h5 class="card-title">Rabbit</h5>
+                                <p class="card-text">Rabbits or bunnies are
+                                    small mammals in the family Leporidae (which
+                                    also includes the hares), which is in the
+                                    order Lagomorpha (which also includes
+                                    pikas)..</p>
+                                <button type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#rabbit">
+                                    Click Here More Info
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="rabbit" tabindex="-1"
+                        aria-labelledby="eagleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"
+                                        id="eagleModalLabel">About Rabbit</h5>
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Rabbits or bunnies are small mammals in
+                                        the family Leporidae (which also
+                                        includes the hares), which is in the
+                                        order Lagomorpha (which also includes
+                                        pikas). They are familiar throughout the
+                                        world as a small herbivore, a prey
+                                        animal, a domesticated form of
+                                        livestock, and a pet, having a
+                                        widespread effect on ecologies and
+                                        cultures. The most widespread rabbit
+                                        genera are Oryctolagus and Sylvilagus.
+                                        The former, Oryctolagus, includes the
+                                        European rabbit, Oryctolagus cuniculus,
+                                        which is the ancestor of the hundreds of
+                                        breeds of domestic rabbit and has been
+                                        introduced on every continent except
+                                        Antarctica. The latter, Sylvilagus,
+                                        includes over 13 wild rabbit species,
+                                        among them the cottontails and tapetis.
+                                        Wild rabbits not included in Oryctolagus
+                                        and Sylvilagus include several species
+                                        of limited distribution, including the
+                                        pygmy rabbit, volcano rabbit, and
+                                        Sumatran striped rabbit.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>

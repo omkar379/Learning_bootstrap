@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospital Services</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      font-family: Arial, sans-serif;
+    }
+
+    .table-container {
+      margin: 50px auto;
+      max-width: 90%;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #006064;
+    }
+
+    /* .table th {
+      background-color: #00796b;
+      color: white;
+    } */
+
+    .table-hover tbody tr:hover {
+      background-color: #e0f2f1;
+    }
+  </style>
 </head>
 <body>
-  <!-- header start -->
+     <!-- header start -->
      <header>
          <nav class="navbar navbar-expand-lg bg-info-subtle" data-bs-theme="dark">
   <div class="container-fluid">
@@ -48,10 +78,8 @@
   </div>
 </nav>
      </header>
-   <!-- header end -->
 
-   <main>
-      <!-- slider section start -->
+        <!-- slider section start -->
     <section>
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade"  data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -101,80 +129,79 @@
   </button>
 </div>
     </section>
-      <!-- slider section end -->
-
-      <!-- product section start -->
-       <!-- <section class="mt-4">
-           <div class="container">
-            <div class="row">
-              <h2>Products</h2>
-              <div class="col-md-3">
-                   <div class="card">
-  <img src="images/city.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">City</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="table-container">
+    <h1>Hospital Services</h1>
+    <table class="table table-bordered border-primary table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Sr.No</th>
+          <th scope="col">Service Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Department</th>
+          <th scope="col">Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Emergency Care</td>
+          <td>24x7 emergency treatment for accidents and critical illness</td>
+          <td>Emergency Department</td>
+          <td>Available 24/7</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Outpatient Services</td>
+          <td>Routine check-ups, diagnostics, and consultations</td>
+          <td>OPD</td>
+          <td>Mon-Sat, 9AM-5PM</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Pathology Lab</td>
+          <td>Blood tests, urine tests, and other laboratory services</td>
+          <td>Diagnostic Department</td>
+          <td>Mon-Sat, 8AM-6PM</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Radiology</td>
+          <td>X-ray, CT Scan, MRI, and Ultrasound Imaging</td>
+          <td>Imaging Department</td>
+          <td>Mon-Sat, 10AM-4PM</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Surgery</td>
+          <td>General and specialized surgeries by expert surgeons</td>
+          <td>Surgical Wing</td>
+          <td>Scheduled (Pre-booking)</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Pharmacy</td>
+          <td>In-house medical store for prescribed medicines</td>
+          <td>Pharmacy Department</td>
+          <td>24/7</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Physiotherapy</td>
+          <td>Rehabilitation and physical therapy sessions</td>
+          <td>Rehab Center</td>
+          <td>Mon-Fri, 10AM-2PM</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>Maternity & Childcare</td>
+          <td>Pre-natal, delivery, and post-natal care</td>
+          <td>Maternity Ward</td>
+          <td>Available 24/7</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-  <img src="images/college.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">College</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-  <img src="images/city.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">City</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-  <img src="images/college.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">College</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-              </div>
-            </div>
-           </div>
-
-       </section> -->
-
-      <!--product section end -->
-
-      <section>
-        <div class="container">
-            <div class="row ">
-            <h2 class="text-center">Hospital</h2>
-               <div class="col-md-6">
-                <img src="images/hopital bed.jpg"  class="img-fluid">
-               </div>
-                <div class="col-md-6">
-                    <p>A hospital is a healthcare institution providing patient treatment with specialized health science and auxiliary healthcare staff and medical equipment.[1] The best-known type of hospital is the general hospital, which typically has an emergency department to treat urgent health problems ranging from fire and accident victims to a sudden illness. A district hospital typically is the major health care facility in its region, with many beds for intensive care and additional beds for patients who need long-term care.
-
-Specialized hospitals include trauma centers, rehabilitation hospitals, children's hospitals, geriatric hospitals, and hospitals for specific medical needs, such as psychiatric hospitals for psychiatric treatment and other disease-specific categories. Specialized hospitals can help reduce health care costs compared to general hospitals.[2] Hospitals are classified as general, specialty, or government depending on the sources of income received.
-
-A teaching hospital campus combines assistance to people with teaching to health science students and auxiliary healthcare students. A health science facility smaller than a hospital is generally called a clinic. Hospitals have a range of departments (e.g. surgery and urgent care) and specialist units such as cardiology. Some hospitals have outpatient departments and some have chronic treatment units. Common support units include a pharmacy, pathology, and radiology.
-
-Hospitals are typically funded by public funding, health organizations (for-profit or nonprofit), health insurance companies, or charities, including direct charitable donations. Historically, hospitals were often founded and funded by religious orders, or by charitable individuals and leaders.[3]
-
-Hospitals are currently staffed by professional physicians, surgeons, nurses, and allied health practitioners. In the past, however, this work was usually performed by the members of founding religious orders or by volunteers. However, there are various Catholic religious orders, such as the Alexians and the Bon Secours Sisters that still focus on hospital ministry in the late 1990s, as well as several other Christian denominations, including the Methodists and Lutherans, which run hospitals.[4] In accordance with the original meaning of the word, hospitals were original "places of hospitality", and this meaning is still preserved in the names of some institutions such as the Royal Hospital Chelsea, established in 1681 as a retirement and nursing home for veteran soldiers.</p>
-                </div>
-      </section>
-      <!-- Footer Start -->
+   <!-- Footer Start -->
       <footer class="bg-dark text-light pt-5 pb-4 mt-5">
         <div class="container">
           <div class="row">
@@ -192,7 +219,7 @@ Hospitals are currently staffed by professional physicians, surgeons, nurses, an
             <!-- Disclaimer -->
             <div class="col-md-4 mb-4">
               <h5 class="fw-bold">Disclaimer</h5>
-              <p>
+              <p class="small">
                 All logos, trademarks, and images are property of their
                 respective owners. This website is intended for informational
                 purposes only and is not affiliated with any third-party brand.
@@ -222,7 +249,8 @@ Hospitals are currently staffed by professional physicians, surgeons, nurses, an
         </div>
       </footer>
       <!-- Footer End -->
-   </main>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap JS (Optional if you have interactive components) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
